@@ -1,0 +1,723 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSI MODEL</title>
+    <link rel="stylesheet" href="./cssStyle.css">
+</head>
+<body>
+    <header>
+        <h1>OSI MODEL</h1>
+    </header>
+    <nav>
+        <a href="#physical">Layer-1</a>
+        <a href="#data-link">Layer-2</a>
+        <a href="#network">Layer-3</a>
+        <a href="#transport">Layer-4</a>
+        <a href="#session">Layer-5</a>
+        <a href="#presentation">Layer-6</a>
+        <a href="#application">Layer-7</a>
+        
+    </nav>
+    <marquee behavior="" direction="">In this tutorial you will know all about OSI MODEL </marquee>
+    <main class="content">
+        <dl>
+            <dt>
+                What is OSI Model?
+            </dt>
+            <DD>
+                It is a conceptual model that describes the universal standard of communication function of
+                telecommunication system or computing system, without any regards to the systems underlying without
+                technology and specific protocol suites.
+                The OSI model stand for “open system interconnection”. It has developed by standard organization ISO
+                (international
+                organization for standardization) in the year 1984.It is a conceptual framework used to describe the
+                function of
+                networking system. The OSI model is still used today as a means to describe the networking
+                architecture.
+                It
+                has seven
+                layer architecture were each layer has specific functionality. All these layer works together to
+                transmit
+                the data from
+                one network to another network across the globe. Each layer has fixed layer no in each time either
+                sending
+                the data or
+                receiving the data. The layers are namely application layer, presentation layer, session layer,
+                transport
+                layer, data
+                link layer, physical layer. first three, layer is called massage layer or as software layer. And the
+                last
+                three layer is
+                called hardware layer.
+
+            </DD>
+        </dl>
+        <hr>
+        <b>Needs of layer layered architecture in OSI model :</b>
+        <p> It needs because of the some following reason :-</p>
+        <ol>
+            <li>Modularity</li>
+
+            <li> Flexibility</li>
+            <li>Independent of Nature</li>
+            <li> Specific implementation of its function can be modified or replaced.</li>
+            <li>For abstract representation of data</li>
+            <li>To reduce complexity in data communication.</li>
+            <li>It provides standardization</li>
+            <li>Task are categories into different sub-task from source to destination.</li>
+            <li>Local distribution due to layered.</li>
+            <li>Reliable approach.</li>
+
+            <p><b>NOTE:-</b> for the abstract representation of data communication process; so , we use layered
+                architecture.</p>
+        </ol>
+        <hr>
+        <h4><a name="Layer_of_OSI">Layer of OSI Model :-</a></h4>
+        <table>
+            <tr>
+                <td><a href="#application">Application</a></td>
+            </tr>
+            <tr>
+                <td><a href="#presentation"> Presentation</a></td>
+            </tr>
+            <tr>
+                <td> <a href="#session">Session</a> </td>
+            </tr>
+            <tr>
+                <td> <a href="#transport">Transport</a> </td>
+            </tr>
+            <tr>
+                <td> <a href="#network">Network</a> </td>
+            </tr>
+            <tr>
+                <td> <a href="#data-link"> Data-link</a></td>
+            </tr>
+            <tr>
+                <td> <a href="#physical"> Physical</a></td>
+            </tr>
+
+        </table>
+        <hr>
+        <b>Basic function of OSI model:-</b>
+        <ul>
+            <li>Each layer has a separate layer of Abstraction</li>
+            <li> Encryption of data</li>
+            <li>Route selection and transportation of data</li>
+            <li>Each layer in the sending device adds it on information to the message it received form the layer just
+                above
+                it and passes the hole package to the layer below it.</li>
+            <li>At data link (layer 2) trailer is also added with header and when it sends to physical layer it change
+                into
+                electromagnetic signals.
+            </li>
+            <li>The entire package is transmit to receiver; package is unwrapped layer by layer</li>
+            <li>It means the header and trailer are removed and the message is again appropriate form</li>
+        </ul>
+        <hr>
+        <p>
+            <b> Another factor along while data is transmitting:- </b>
+        </p>
+        <ul>
+            <li> Security algorithm</li>
+            <li>
+                Error detection
+            </li>
+            <li> Logical and physical address</li>
+            <li>Data rate</li>
+            <li>Routing protocols</li>
+            <li>Data compression</li>
+            <li>Data encryption</li>
+        </ul>
+        <hr>
+        <h4> Data Sending Source to Destination</h4>
+        <table class="S_table">
+            <tr>
+                <th colspan="2">SOURCE</th>
+
+                <th colspan="2">DESTINATION</th>
+            </tr>
+            <tr>
+                <td>APPLICATION</td>
+
+                <td rowspan="4" colspan="2"> Intermediate Nodes </td>
+                <td>APPLICATION</td>
+
+
+
+            </tr>
+            <tr>
+                <td>PRESENTATION</td>
+                <td>PRESENTATION</td>
+
+
+            </tr>
+            <tr>
+                <td>SESSION</td>
+                <td>SESSION</td>
+            </tr>
+            <tr>
+                <td>TRANSPORT</td>
+                <td>TRANSPORT</td>
+            </tr>
+            <tr>
+                <td>NETWORK</td>
+                <td>NETWORK</td>
+                <td>NETWORK</td>
+                <td>NETWORK</td>
+
+            </tr>
+            <tr>
+                <td> DATA-LINK</td>
+                <td>DATA-LINK</td>
+                <td>DATA-LINK</td>
+                <td>DATA-LINK</td>
+            </tr>
+            <tr>
+                <td>PHYSICAL</td>
+                <td>PHYSICAL</td>
+                <td>PHYSICAL</td>
+                <td>PHYSICAL</td>
+            </tr>
+            <tr style="color:red">
+                <td>S...</td>
+                <td>...A...</td>
+                <td>...B...</td>
+                <td>...D</td>
+        </table><br>
+        <b>
+            <p style="color:rgb(12, 8, 143)">Note-->Moving in this table source to destination via intermediate Nodes
+            </p>
+        </b>
+        <hr>
+
+        <h4>Major duties of all layers in OSI</h4>
+        <table class="S_table">
+            <tr>
+                <td>APPLICSTION</td>
+                <td rowspan="3">Message</td>
+            </tr>
+            <tr>
+                <td>SESSION</td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <td>PRESENTATION</td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <td>TRANSPORT</td>
+                <td>User Datagra/Segment</td>
+            </tr>
+            <tr>
+                <td>NETWORK</td>
+                <td>Datagram/Packet</td>
+            </tr>
+            <tr>
+                <td>DATA-LINK</td>
+                <td>Frame/cell</td>
+            </tr>
+            <tr>
+                <td>PHYSICAL</td>
+                <td>Bit Streams</td>
+            </tr>
+        </table>
+        <hr>
+        <dl>
+            <dt><a name="application"><b><a href="#Layer_of_OSI">APPLICATION LAYER:-</a></b></a></dt>
+            <dd> this layer provides suppotr for user and application tasks which are programs that actually implemented
+                the function performed by user to accompolish various task over the network. It determine how the user
+                will use the data network. It allows the user to use the network. for example, it provides the
+                network-based service the end user. Example of network servics are distributed databases, electronic
+                mail, resource sharing, file transfers, remote file access and network management. This layer defines
+                the nature of the task to be performed.It provides user interface to communicate with the computer.
+                In this layer message is preparing, file transfer, access and management being done.
+                It changes the data format
+                into machinery language, and decide in which format data are transfer to receiver that receiver
+                understand.
+                It provides to Mail service, also it allow to network resources.
+                it works on
+                data encryption & description for security purpose. It also works on the compression the data, after
+                this
+                the data is
+                moving forward into session layer.
+            </dd>
+            <hr>
+            <dt><a name="presentation"></a><b><a href="#Layer_of_OSI">PRESENTATION:-</a></b></dt>
+            <DD>
+                The presentation layer translate the data based on application layer.
+                It also allow to compression service.The presentation layer concerned with presentation of data where
+                supports special processing on the data from the time application attempts to send it till the time it
+                is sent over network. Thus, it responsible for issues that may where data sent from system needs to be
+                viewed in different way by other system. presentation layer performs functions related to syntax
+                semantics of information transmitted. This includes formatting displaying received data terminals
+                printers. It concerned differences in the syntax used communicating applications. This layer responsible
+                remedying those differences resorting mechanisms transform the syntax (specific to platform question)
+                common one for purpose of exchange. example, performs encoding of data in standard, agreed-upon way
+                facilitates information exchange among heterogeneous systems using different codes strings, example,
+                conversion between ASCII EBCDIC character codes. facilitates data compression reducing number of bits to
+                transmitted encrypts data privacy authentication, necessary. Some of specific types of handling issues
+                that presentation layer provides are follows:
+                <ul>
+                    <li>Translation: Different types of computers like PCs, Macintoshes UNIX systems, AS/400 servers,
+                        etc., in an internetwork have many distinct characteristics and represent data in different
+                        ways. It is the responsibility of the presentation layer to hide these differences between
+                        different machines for seamless and easy exchange of data between two hosts working on different
+                        machines. The translation function is sometimes not needed.</li>
+                    <li>
+                        Compression: Compression and decompression are also carried out a
+                        The presentation layer to improve the throughput of data. However, these
+                        functions are optional.</li>
+
+                    <li> Encryption: Some types of encryption and decryption are performed the presentation layer to
+                        ensure the security of the data as it passes down the protocol stack. These are also optional.
+                    </li>
+                    Sometimes, the presentation layer functions are taken care of by the cation layer and the functions
+                    like translation, compression/decompression encryption/ decryption are not always required. Due to
+                    these facts, the presentation layer is often skipped in actual protocol stack implementations; and
+                    it possible for Layer 7 to directly talk to layer 5 in the OSI model.
+
+                </ul>
+            </DD>
+            <hr>
+            <dt><a name="session"></a><B><a href="#Layer_of_OSI">SESSION LAYER:-</a></B></dt>
+            <DD>
+                In this layer dialog control(logical environment) and synchronizationis done.
+                This layer controls the conversation between two computer .IT
+                also include authentication and reconnection. That means after the connection is lost and some data are
+                transferred it will reconnect andstart transfer the data continuously, after this the data moving
+                forward to transport layer. The session layer is the lowest of the three upper layers and deals mainly
+                software application issues only. It helps enable devices to establish and e sessions. Primarily, a
+                session is a persistent logical linking of two software action processes to exchange data over a
+                specified period of time. The session s responsible for establishing, maintaining, and arbitrating the
+                dialogs n communicating applications. It also provides enhanced services useful in applications, for
+                example, remote login, remote file transfer, etc. It is also responsible for orderly recovery from
+                failures by implementing appropriate Dinting mechanisms. The applications on either side of the session
+                can get data or send packets to another for as long as the session lasts. The session handles session
+                message exchanges and terminates when session ends. It coordinates monitors session identification so
+                that designated parties participate. It provides security services control access session information.
+                session allows hosts establish session between them which ordinary transport allowed. session layer
+                manages dialogue control.
+                <br>
+                <b> Establish, Manage Terminate Sessions:</b> primary task session layer protocols is provide necessary
+                ways establish, manage terminate sessions. These session protocols are provided to layer protocols
+                through command sets known as application program interfaces or APIs.
+                <br>
+                Some of common examples of APIs NetBIOS, TCP/IP sockets. Remote Procedure Calls (RPCs), etc. The enable
+                application complete specified high-level communications over network successfully and easily the help
+                of standardized set services
+
+            </DD>
+            <hr>
+            <dt><a name="transport"></a><B><a href="#Layer_of_OSI">TRANSPORT LAYER:-</a></B></dt>
+
+            <dd>
+                This layer is accept data from session layer, and split into smaller unit called segment. in this
+                layer also checking the error and the flow of data. also it responsible for end-to-end communication
+                over a
+                network.
+                This medium is also known as heart of this system, because it converted the data into small bundle which
+                is
+                known as
+                segment. This layer works on TCP & UDP.If there is transfer data after establishing connection then use
+                of
+                TCP.
+                it also alert that the data is transferred or not And Without Establish use UDP for fast transferring
+                the
+                data, but in this
+                connection not any alert that the data will transfer or not.
+                Some important functions of the transport layer are as follows:
+                <ul>
+                    <li>
+
+                        <b>Process-Level Addressing:</b> Like Layers 2 and 3, the transport layer also deals with the
+                        addressing issue but quite differently in which it is used to differentiate between software
+                        programs or different applications. This function of the transport layer enables many different
+                        software programs or applications to use a network layer protocol simultaneously.
+                    </li>
+                    <li>
+                        <b>Multiplexing and Demultiplexing:</b> It enables a sending device to multiplex the data
+                        received from many application programs for transport, and demultiplex the data received while
+                        acting as the receiving side.
+                    </li>
+                    <li>
+                        <b> Segmentation, Packaging and Reassembly:</b> According to the specifie limiton the length of
+                        the data packet at the network layer, the transport layer (like network layer) segments the
+                        large amounts of data into small pieces on the source machine to transmit across the network and
+                        then reassemble them on the destination machine.
+                    </li>
+
+                    <li>
+                        <b> Connection Establishment, Management and Termination:</b> The connection-oriented protocols
+                        at the transport layer establish a connection, maintain it as data is sent over it and then
+                        terminate the connection when it is no longer required for the series of communications.
+                    </li>
+                    <li>
+                        <b>Acknowledgments and Retransmissions:</b> The transport layer ensures guaranteed delivery of
+                        data reliably which is accomplished by using a variety of techniques, most commonly the
+                        combination of acknowledgments and retransmission of data if data is not delivered successfully.
+                    </li>
+
+                    <li>
+                        <b>Flow Control:</b> It refers to the process of specifying that the data rate of the sending
+                        device should not be prohibitively excessive so that the receiver could be saved from being
+                        bogged down with data. In other words, this function manages mismatches in speed between the
+                        receiver.
+                    </li>
+                </ul>
+                <ol>
+                    <li>Service-point Addressing</li>
+                    <ul>
+                        <li>End-to-End delivery </li>
+                        <li>process-to-process delivery</li>
+                    </ul>
+                    <li>Segmentation and Reassembling</li>
+                    <li>Connection Controls</li>
+                    <ul>
+                        <li> Connection-Oriented (TCP)</li>
+                        <LI> Connection-less (UDP)</LI>
+                    </ul>
+                    <li>Flow Control</li>
+                    <li>Error Control</li>
+                </ol>
+            </dd>
+            <hr>
+            <dt><a name="network"></a><b><a href="#Layer_of_OSI">NETWORK LAYER:-</a></b></dt>
+            <dd>
+                In this layer the segment of data is converted into packet. It contain the address of data where the
+                data is coming from and where to go. Together It also decided in what format and which path, data will
+                send
+                to the
+                receiver that in fast. That means all the work of router complete in this layer.
+                The key functions of the network layer are as follows:
+                <ul>
+                    <li>
+                        <b>Logical Addressing:</b> The devices communicating across a network have logical addresses
+                        which are
+                        known as layer three addresses. Internet Protocol (IP) is an example of Layer 3 addressing.
+                        Unlike, data link addressing that deals only with local physical devices, the logical addresses
+                        at Layer 3 are independent of particular hardware and unique across an entire internetwork.
+
+                    </li>
+                    <li>
+                        <b> Routing:</b> It is the key function of Layer 3 in which data is routed across interconnected
+                        networks to deliver finally at the host destination. This is accomplished with the help of
+                        devices like routers and software routines that function at the network layer to handle incoming
+                        packets from various sources and determine routes for their final destination so that they could
+                        be delivered reliably there.
+                    </li>
+                    <li>
+
+                        <b>Datagram Encapsulation:</b> The network layer functions to encapsulate messages received from
+                        higher
+                        layers by placing them into datagrams with a network layer header. Datagrams are also referred
+                        to as packets.
+
+                    </li>
+                    <li>
+                        <b>Fragmentation and Reassembly:</b> The network layer passes down messages to the data link
+                        layer for
+                        transmission through the physical layer over the transmission media to other networks or the
+                        local network. The network layer also splits large packets into smaller packets according to the
+                        limits imposed on the length of the packet by the data link layer. This process is called
+                        fragmentation. Thus, the fragmented pieces are put together at the network layer of the
+                        destination machine. This process is called the reassembly of packets.
+                    </li>
+                    <li>
+                        <b>
+                            The function of the network layer may be summarized as follows:</b> The main role of the
+                        network
+                        layer is to accept packets from a source and deliver them to a destination machine. The network
+                        layer provides services that should be independent of router technology. It shields the
+                        transport layer from the router details and facilities consistent network addressing-across
+                        network.
+                        It also shields the above layers from details about the underlying network (the network topology
+                        and road map) and the routing technology that might have been deployed to connect different
+                        networks together.
+                    </li>
+                </ul>
+                <p> following task are performed in this layer
+                <ol>
+                    <li>Packetization</li>
+                    <li>Routing</li>
+                    <li>Conjection Control</li>
+                    <li>logical Addressing</li>
+                    <li>Accounting and Billing</li>
+                    <li>Address Transform Technique</li>
+                    <ul>
+                        <li>Logical --> to --> Physical(ARP :- Addressing Resolution Proctocol)</li>
+                        <li>Physical --> to --> logical (RAPR :- Reverse Addressing Resolution Proctocol) </li>
+                    </ul>
+                </ol>
+                </p>
+
+            </dd>
+            <hr>
+
+            <dt><a name="data-link"></a><b><a href="#Layer_of_OSI"> DATA-LINK LAYER:-</a></b></dt>
+            <dd>
+                The data which is in packet form, it convert into frame. the data link layer also correct the error
+                that occurred at physical layer, and logical address(IP) of source or destination are add in this layer.
+                and
+                moves
+                toward to physical layer. it maintain the speed of transferring data of both side either sender or
+                receiver. Some of example of data link layer are HDLC and Ethernet.
+                The key function of data link layer data link layer summarized follows:
+
+                <ul>
+                    <li><b>Logical Link Control (LLC):</b> LLC refers to one of sublayers of datalink layer and deals
+                        with functions enable control establishment of logical between devices on computer network. LLC
+                        has also been given responsibility provide services to the network layer above it and hides the
+                        rest of the details of the link layer to allow technologies to seamlessly with higher layers.
+                        Most of the local networking technologies use IEEE 802.2 LLC
+
+
+                    </li>
+                    <li> <b>Media Access Control (MAC):</b> MAC refers to one of sublayers the data link layer and
+                        specifies procedures used by devices to access the network medium. Its role to control and
+                        manage medium to avoid conflicts because the design computer network based the shared medium
+                        that may composed of single cable or series of cables that electrically connected to virtual
+                        medium. Some the examples of MAC CSMA/CD Ethernet and token passing the Token Ring
+
+                    </li>
+                    <li> <b> Data Framing:</b> Messages of higher layer encapsulated at this frames that they may be
+                        sent across the network at the
+                    </li>
+                    <li>
+                        <b> Addressing:</b> The data link layer also deals with the issue which is popularly known as
+                        hardware address or address the labelled with destination location. device on a network provided
+                        with unique called hardware address MAC address, which used the link layer protocol ensure that
+                        data intended for specific machine gets properly.
+                    </li>
+                    <li>
+                        <b>Error Handling:</b> data also that occur the lower levels of the network stack. For example,
+                        Cyclic Redundancy used to allow the receiving data detect if was received correctly.
+                    </li>
+                </ul>
+                <p>following task are perform in this layer :-</p>
+                <ol>
+                    <li>Farming</li>
+                    <li>Flow-Control</li>
+                    <li>Error-Control</li>
+                    <li>Node-to-Node delivery</li>
+                    <li>Physical Addressing</li>
+                    <li>Access Control</li>
+                    <ul>
+                        <li>Single Station Model (Point-to-Point)</li>
+                        <li>Multiple-access Model (Multipoint) </li>
+                    </ul>
+                </ol>
+
+            </dd>
+            <hr>
+            <dt><a name="physical"></a><b><a href="#Layer_of_OSI">PHYSICAL LAYER:-</a></b></dt>
+            <dd>
+                In this layer the data is coming with its logical address. And it convert into form of bits that means
+                in form of binary no(0,1). At physical layer, one might find “physical” resource such as network hubs,
+                repeater ,network
+                adapters, or modems. It decided the data will send wireless or through wire. And this process is only
+                for
+                sending. For
+                receiving follow same step vice versa. That means first physical layer and at last application layer.
+                The physical layer functions are as follows: <br>
+                <ul>
+                    <li>
+                        <b>Describing Hardware Specifications:</b> It includes specifications of cables, connectors,
+                        radio
+                        transceivers, network interface cards, etc.. <br>
+                    </li>
+                    <li> <b>Encoding and Signalling:</b> The physical layer supports various encoding and signalling
+                        functions to convert data, from bit stream to frame and vice versa, to send across the network.
+                        <br>
+                    </li>
+                    <li> <b>Data Transmission and Reception:</b> It is responsible for transmitting and receiving data
+                        over
+                        the physical media.</li>
+                </ul>
+                <p>The physical layer accept data from data link layer in bit Streams for the subsequent transmission
+                    over the physical medium. At the machanical (connector types), electrical (voltage level),
+                    functional (ping assignments), and procedural(handshake) characteristic are defined. RS-232C/D is an
+                    example of physical layer defination. </p>
+                <p>This layer is completely hardware based. In this layer various task is performed.
+                <ol>
+                    <li>Representation of List</li>
+                    <li>Signalling</li>
+                    <li>Physical characteristic Transmission Media Interface</li>
+                    <li>Transmission Mode</li>
+                    <ul>
+                        <li>Simplex</li>
+                        <li>Half Duplex</li>
+                        <li>Full Duplex</li>
+                    </ul>
+                    <li>Bit Synchronization</li>
+                    <li>Transmission Rate</li>
+                    <li> Line configuration</li>
+                    <ul>
+                        <li>Point-to-Point</li>
+                        <li>Multi-Point</li>
+                    </ul>
+                    <li>Physical topology</li>
+                    <li>Multiplexing</li>
+                    <li>Transmission Type</li>
+                    <ul>
+                        <li>Serial (Synchronous , Asynchronous)</li>
+                        <li>Parallel</li>
+                    </ul>
+                </ol>
+                </p>
+            </dd>
+
+            <a href="" name="layersgrouping"></a>
+            <dt>LAYER GROUPINGS:</dt>
+            <dd>&nbsp;&nbsp; The seven layers of the OSI Model are categorized into two-layer groupings. The lower
+                layers are Layers
+                1, 2, 3, and 4 and the upper layers are Layers 5, 6 and 7. The physical, data link, network and
+                transport layers, which are the lower layers of the OSI model primarily deal with the formatting,
+                encoding and transmission of data over the network without caring to know much about the data, its
+                usage, etc They define how data is transferred through a physical wire or through switches and routers
+                and how to rebuild a data stream from a transmitting host to a destination host's application. The lower
+                layers are implemented using both hardware and software with the incidence of hardware reducing to
+                software from Layer I to Layer 4.
+
+                <br>&nbsp;&nbsp; The top three layers define the way the applications within the end stations will
+                communicate with each
+                other and with users while the bottom four layers define how data is transmitted end-to-end. The higher
+                layers of the model-the session, presentation and application layers primarily deal with user interface
+                and implement the applications that run over the network irrespective of knowing how data is delivered
+                from one place to another by the low-level layers. These layers are almost always implemented using
+                software running on a computer or other hardware devices like routers, gateways, etc. The application
+                layer along with other upper layers provides the user interface and applications communicating between
+                hosts. The upper layers are not expected to know anything about networking or network addresses. The
+                bottom four layers take the responsibility of networking and network addresses.
+            </dd>
+            <table>
+                <tr>
+                    <th>UPPER 3 LAYERS</th>
+                    <th>BOTTOM 4 LAYERS</th>
+
+                </tr>
+                <tr>
+                    <td>APPLICATION</td>
+                    <td>TRANSPORT</td>
+                </tr>
+                <tr>
+                    <td>PRESENTATION</td>
+                    <td>NETWORK</td>
+                </tr>
+                <tr>
+                    <td>SESSION</td>
+                    <td>DATA-LINK</td>
+                </tr>
+                <tr>
+                    <td>&lt;--&gt;</td>
+                    <td>PHYSICAL</td>
+                </tr>
+            </table>
+        </dl>
+        <p>
+            &nbsp;&nbsp;Some layers, like data and physical layers, are further divided into sublayers. These sublayers
+            precisely define the internal details of technologies and protocols at those layers. Some OSI layers are
+            related to each other. The data and physical link layers are considered closely related, and so are the
+            network and transport layers, within the lower-level grouping. In case of the upper layers, the line
+            dividing each layer from the other is so blurred that many technologies implement two or even all three of
+            these layers.</p>
+        <a href="" name="intraction_between_osi"></a>
+        <h3>INTERACTION BETWEEN OSI LAYERS </h3>
+        <p>In this section, we will discuss the about the interaction between OSI layers.
+        </p>
+        <ul>
+            <li>
+
+
+                <b>OSI Interfaces:</b> The OSI interface is a process of communication between adjacent layers in which
+                data is passed between layer N of the model and layer N-1 or layer N+1. The layer 3/4 interface is used
+                by a Layer 3 and Layer 4 protocol to pass control and data information.
+            </li>
+            <li>
+                <b> Vertical Communication:</b> This refers to communication up and down the protocol stack every time
+                any data is sent or received across the network. This is because there exits only logical connections
+                between corresponding layers of the OSI models of hosts machines, not actual physical connections. At
+                the sending end, data passes through the higher layer to the physical layer so that it may be
+                transmitted across the network to the receiving end. At the receiving end, the process is reversed so
+                that the data can travel back up to the higher layers of the receiving device and to the user interface.
+            </li>
+            <li>
+                <b> Modularity and Inter-Layer Interactions:</b> The OSI model supports the interconnection of different
+                implementations of various autonomous layers. This is done through interfaces in which each layer should
+                provide a consistent, well-documented interface to the layers above it so that any upper layer
+                implementation can use the lower layer properly.
+            </li>
+            <li>
+                <b>Protocols:</b> These are sets of agreed rules, procedures, instructions and/or functions describing
+                one type of communication between specific
+                software and hardware elements running at the same layer on different machines within a network. They
+                have their own language. Some of them are similar to each other while others are quite unique,
+                Horizontal Communication: Each layer in the OSI model has been
+            </li>
+            <li> <b>horizontal Communication: </b> Each layer in OSI Mosel has been assigned set of tasks for which it
+                is responsible and these tasks usually come under protocols defined for that particular layer.
+                Horizontal communication defines that a process running at a particular layer on one host machine can
+                accomplish logical communication with a similar process running at the same layer on another host
+                machine. As both the host machines are only physically connected at the physical layer. therefore the
+                data on the sending host machine needs to pass down through the layers between the higher layers to the
+                physical layer. Thereafter, the data is transmitted through the transmission media to the physical layer
+                of the other host machine and pushed up to the similar layer of the receiving host machine. In this
+                manner, the two communicating hosts are logically connected at that particular layer.
+
+
+            </li>
+        </ul>
+        <p>&nbsp; For example, a protocol running at Layer 6 in the sending host machine passes down to Layer I of the
+            same machine and is then transmitted over the transmission media to the Layer I of the receiving host
+            machine. It is then pushed up to Layer 6 of the receiving host machine where a logical connection is
+            established between Layer 6 of the sending host machine and Layer 6 of the receiving host machine. Thus, a
+            protocol running at a particular layer in a host machine establishes a logical connection with a similar
+            layer in another host machine. In fact, they have no physical connection at that layer. This is the
+            horizontal connection that enables a protocol at a particular layer to perform its assigned job by creating
+            a logical communication with the corresponding layer at the other side of the communicating host machine.
+            However, the horizontal communication between similar layers also requires vertical communication, except in
+            case of communication between Layers 6 and 1.</p>
+        <p>&nbsp;
+            <b>Protocol Data Units (PDUs):</b> Protocols describe the rules to control horizontal communication for
+            exchanging data between processes running at corresponding layers within the OSI model. Except Layer 1, all
+            layers include their data in the message that is exchanged between corresponding software elements on two or
+            more than two devices in the network. This additional data appended at each layer, except Layer 1, is
+            mechanism for communicating information between protocols and is known as PDUS or Protocol Data Units. Each
+            PDU is specified by a specific format that implements the requirements and features of the protocol.
+        </p>
+        <p>&nbsp;
+            <b>Service Data Units (SDUs):</b> The communication between corresponding layer except Layer 1 is logical
+            communication. Here, a protocol communicates by passing down its PDU to the next lower layer for
+            transmission. On the other hand, the lower layers provide services to the layers immediately above them. One
+            example of such a service is to manage and handle data received from the layer above. A PDU is considered in
+            itself as a complete message at a particular layer. say N. When this layer N PDU is passed down to layer
+            N-1, it becomes the data for the layer N-1 and the protocol for layer N-1 is expected to provide service.
+            Thus, the layer N PDU becomes the Service Data Unit (SDU) for the layer N-1. Sometimes, SDU is also called
+            or the message body or payload.
+        </p>
+        <p>&nbsp;
+            <b>Data Encapsulation:</b> N PDU, when transported to the N-1 layer, becomes N SDU for the N-1 layer. The
+            layer N-1 transports N SDU to the next lower layer by placing the layer N SDU into its own PDU format. This
+            process is known as data encapsulation in which the entire message including SDUS of higher layers are
+            encapsulated as the data payload of the message at the lower layer. This process continues till the message
+            reaches the physical layer.
+        </p>
+        <hr>
+
+        <a href="./index.html"><button class="btn1">Index</button></a>
+        <a href="./chapter2.html"> <button class="btn1">Previous</button></a>
+        <a href="./chapter4.html"> <button class="btn1">Next</button></a>
+    </main>
+    <footer>
+
+        <a href="#">FAQ</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Refund Policy</a>
+        <a class="copyright" href="#">&copy; 2023 | Swarup Kumar Mahato</a>
+    </footer>
+<script src="./script.js"></script>
+</body>
+</html>
